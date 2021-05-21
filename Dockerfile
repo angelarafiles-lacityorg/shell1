@@ -1,5 +1,5 @@
 # Copyright 2020 Google LLC
-# d
+# e
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -26,7 +26,6 @@ WORKDIR /app
 # Retrieve application dependencies.
 # This allows the container build to reuse cached dependencies.
 # Expecting to copy go.mod and if present go.sum.
-COPY ./ ./
 COPY go.* ./
 RUN go mod download
 
